@@ -293,12 +293,12 @@ body {
   background: rgba(229, 229, 229, 0.1);
 }
 
-.social__icon {
+.social__link {
   fill: var(--main-color);
 }
 
 .social__link:hover {
-  color: #0a84ff;
+  fill: #0a84ff;
 }
 
 .activity__item {
