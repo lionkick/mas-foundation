@@ -448,3 +448,24 @@ body {
   text-transform: uppercase;
   color: var(--second--color);
 }
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 130%;
+  color: #414141;
+}
+
+.footer__developed {
+  font-size: 14px;
+  line-height: 130%;
+  color: #414141;
+}
+
+.link__mas {
+  color: var(--button-color);
+}
+
+.link__mas:hover,
+.link__mas:focus {
+  color: var(--main-color);
+}
