@@ -6,6 +6,7 @@
   /* color */
   --main-color: #e5e5e5;
   --second--color: #fff;
+  --button-color: #0a84ff;
 
   /* bg color */
   --page-bg-color: #1e1e1e;
@@ -40,6 +41,49 @@ body {
   color: currentColor;
 }
 
+/* Buttons */
+
+.header__button {
+  position: relative;
+  padding: 10px 23px;
+  display: inline-block;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #fff;
+
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.header__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 39px;
+  height: 39px;
+  background-color: #0a84ff;
+  background-image: url("../img/donat__ico.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transform: translate(110%, -50%);
+}
+
+.header__button:hover,
+.header__button:focus {
+  color: var(--button-color);
+  border-color: var(--button-color);
+  background-color: var(--second--color);
+}
+
+.header__button:hover::after {
+  background-color: var(--second--color);
+}
+
 /* ==================================== */
 /* Header */
 /* ==================================== */
@@ -62,4 +106,67 @@ body {
 .navigation__link:hover,
 .navigation__link:focus {
   opacity: 1;
+}
+
+.language__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--second--color);
+}
+
+.language__link:hover,
+.language__link:focus {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* =============================== */
+/* Hero */
+/* =============================== */
+
+.hero__supertitle {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--second--color);
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.dark__word {
+  color: rgba(229, 229, 229, 0.5);
+}
+
+.trident {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-color: var(--second--color);
+  background-image: url("../img/trident__symbol.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 11px;
+}
+
+.socilal__item {
+  border: 1px solid rgba(229, 229, 229, 0.1);
+  border-radius: 5px;
+  width: 44px;
+  height: 44px;
+
+  backdrop-filter: blur(8px);
+  background: rgba(229, 229, 229, 0.1);
+}
+
+.social__icon {
+  fill: var(--main-color);
 }
