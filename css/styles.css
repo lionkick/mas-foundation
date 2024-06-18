@@ -1,7 +1,7 @@
 :root {
   /* font */
-  --font-family: "SF Pro Display", sans-serif;
-  --second-family: "Inter", sans-serif;
+  --font-family: 'SF Pro Display', sans-serif;
+  --second-family: 'Inter', sans-serif;
 
   /* color */
   --main-color: #e5e5e5;
@@ -10,6 +10,22 @@
 
   /* bg color */
   --page-bg-color: #1e1e1e;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--main-color);
+  background-color: var(--page-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 .visually-hidden {
@@ -26,10 +42,15 @@
   overflow: hidden;
 }
 
-body {
-  font-family: var(--font-family);
-  color: var(--main-color);
-  background-color: var(--page-bg-color);
+.container {
+  width: 1440px;
+  padding-left: 80px;
+  padding-right: 83px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid red;
 }
 
 .item {
@@ -60,6 +81,8 @@ body {
   padding: 10px 23px;
   display: inline-block;
 
+  margin-right: 95px;
+
   font-weight: 600;
   font-size: 15px;
   line-height: 130%;
@@ -71,14 +94,15 @@ body {
 }
 
 .header__button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 0;
   width: 39px;
   height: 39px;
   background-color: #0a84ff;
-  background-image: url("../img/donat__ico.svg");
+  background-image: url('../img/donat__ico.svg');
+  background-size: 17px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -113,14 +137,14 @@ body {
 }
 
 .support__button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 0;
   width: 63px;
   height: 63px;
   background-color: #0a84ff;
-  background-image: url("../img/support__ico.svg");
+  background-image: url('../img/support__ico.svg');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -155,14 +179,14 @@ body {
 }
 
 .send__button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 0;
   width: 63px;
   height: 63px;
   background-color: #0a84ff;
-  background-image: url("../img/send__ico.svg");
+  background-image: url('../img/send__ico.svg');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -196,13 +220,13 @@ body {
 }
 
 .more__link::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 110%;
   top: 15%;
   width: 10px;
   height: 10px;
-  background-image: url("../img/linc__ico.svg");
+  background-image: url('../img/linc__ico.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -211,11 +235,30 @@ body {
 /* Header */
 /* ==================================== */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header__logo {
+  display: block;
+  margin-right: 126px;
+}
+
+.logo__icon {
   fill: var(--second--color);
 }
 
 /* navigation */
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 38px;
+}
+
 .navigation__link {
   font-family: var(--font-family);
   font-weight: 500;
@@ -229,6 +272,21 @@ body {
 .navigation__link:hover,
 .navigation__link:focus {
   opacity: 1;
+}
+
+.header__other {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+}
+
+.language__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .language__link {
@@ -247,6 +305,11 @@ body {
 /* =============================== */
 /* Hero */
 /* =============================== */
+
+.hero {
+  position: relative;
+  padding-top: 140px;
+}
 
 .hero__supertitle {
   font-style: italic;
@@ -274,7 +337,7 @@ body {
   width: 56px;
   height: 56px;
   background-color: var(--second--color);
-  background-image: url("../img/trident__symbol.svg");
+  background-image: url('../img/trident__symbol.svg');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 11px;
