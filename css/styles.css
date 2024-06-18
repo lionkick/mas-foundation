@@ -402,10 +402,6 @@ p {
   margin-bottom: 120px;
 }
 
-.projects__title {
-  margin-bottom: 40px;
-}
-
 .projects__list {
   display: flex;
   gap: 11px;
@@ -443,6 +439,8 @@ p {
 }
 
 .project__title {
+  margin-bottom: 40px;
+
   font-weight: 500;
   font-size: 28px;
   line-height: 100%;
@@ -506,11 +504,23 @@ p {
 }
 
 /* Team */
+
+.team__container {
+  margin-bottom: 120px;
+}
+
 .team__title {
+  margin-right: 64px;
+
   text-align: left;
+  width: 264px;
 }
 
 .team__info {
+  display: flex;
+}
+
+.team__about {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 28px;
@@ -521,13 +531,44 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-.team__text {
+.team__subject {
   font-size: 16px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.7);
 }
 
+.team__list {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.team__item {
+  padding: 20px;
+
+  border: 1px solid #252525;
+  background-color: #0d0d0d;
+}
+
+.team__item:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.team__item:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.team__pic {
+  display: block;
+  margin-bottom: 30px;
+
+  border-radius: 12px;
+}
+
 .team__name {
+  margin-bottom: 4px;
+
   font-weight: 600;
   font-size: 21px;
   line-height: 140%;
@@ -550,9 +591,25 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/* Partners */
+
+.partners__container {
+  margin-bottom: 120px;
+}
+
+.partners__title {
+  margin-bottom: 40px;
 }
 
 /* News */
+
+.news__list {
+  display: flex;
+  gap: 10px;
+}
 
 .news__date {
   font-size: 14px;
