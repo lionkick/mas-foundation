@@ -606,18 +606,45 @@ p {
 
 /* News */
 
+.news__title {
+  margin-bottom: 40px;
+}
+
 .news__list {
+  margin-bottom: 60px;
   display: flex;
   gap: 10px;
 }
 
+.news__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.news__pic-wrapper {
+  margin-bottom: 30px;
+  padding: 25px;
+
+  background-color: #171717;
+  border-radius: 10px;
+}
+
+.news__pic {
+  display: block;
+
+  border-radius: 10px;
+}
+
 .news__date {
+  margin-bottom: 15px;
+
   font-size: 14px;
   line-height: 140%;
   color: rgba(229, 229, 229, 0.5);
 }
 
 .news__subject {
+  flex-grow: 1;
   font-weight: 600;
   font-size: 21px;
   line-height: 140%;
