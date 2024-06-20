@@ -739,6 +739,8 @@ img {
 
 .address {
   display: flex;
+
+  margin-bottom: 40px;
 }
 
 .footer__phone {
@@ -752,6 +754,7 @@ img {
 }
 
 .footer__social {
+  margin-top: 0;
   display: flex;
   gap: 12px;
 }
