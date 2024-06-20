@@ -759,6 +759,10 @@ img {
   gap: 12px;
 }
 
+.footer__button {
+  margin-left: auto;
+}
+
 .footer__copyright {
   font-size: 14px;
   line-height: 130%;
