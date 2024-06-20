@@ -729,15 +729,31 @@ img {
   width: 240px;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   gap: 40px;
 }
 
+.footer__addr-support {
+  margin-left: auto;
+}
+
+.address {
+  display: flex;
+}
+
 .footer__phone {
+  margin-right: 60px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 130%;
   text-transform: uppercase;
   color: var(--second--color);
+}
+
+.footer__social {
+  display: flex;
+  gap: 12px;
 }
 
 .footer__copyright {
