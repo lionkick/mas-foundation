@@ -56,7 +56,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .list {
@@ -328,6 +328,10 @@ img {
 .hero {
   /* position: relative; */
   padding-top: 140px;
+
+  background-image: url('../img/hero/hero__bg.png');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .hero__container {
@@ -346,7 +350,7 @@ img {
 }
 
 .hero__title {
-  width: 950px;
+  width: 960px;
   margin-bottom: 246px;
 
   font-weight: 500;
@@ -535,6 +539,7 @@ img {
 }
 
 .team__info {
+  margin-bottom: 50px;
   display: flex;
 }
 
@@ -618,8 +623,26 @@ img {
   margin-bottom: 120px;
 }
 
+.partners__list {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partners__link {
+  /* outline: 1px solid white;
+  color: white; */
+}
+
 .partners__title {
   margin-bottom: 40px;
+}
+
+.parnters__icon {
+  fill: currentColor;
 }
 
 /* News */
@@ -707,6 +730,7 @@ img {
 
 .footer__container {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .footer__logo {
@@ -731,6 +755,11 @@ img {
   flex-wrap: wrap;
   align-content: flex-start;
   /* gap: 40px; */
+}
+
+.navigation__item--footer:not(:last-child) {
+  margin-right: 48px;
+  margin-bottom: 20px;
 }
 
 .footer__addr-support {
@@ -764,6 +793,12 @@ img {
 .footer__button {
   margin-left: auto;
   margin-right: 68px;
+}
+
+.copyright__container {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__copyright {
