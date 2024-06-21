@@ -535,6 +535,52 @@ img {
   display: flex;
 }
 
+.goodbye__form {
+  width: 640px;
+}
+
+.form__title {
+  margin-bottom: 50px;
+  width: 530px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.enemy-wish,
+.enemy-wish__label,
+.enemy-wish__input {
+  display: block;
+}
+
+.enemy-wish {
+  margin-bottom: 30px;
+}
+
+.enemy-wish__label {
+  margin-bottom: 15px;
+
+  font-size: 21px;
+  line-height: 130%;
+  color: var(--main-color);
+}
+
+.enemy-wish__input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px 12px 12px 42px;
+  outline: transparent;
+  background-color: #0d0d0d;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .goodbye__photo {
   padding: 20px;
 
@@ -542,12 +588,8 @@ img {
   border-radius: 10px;
 }
 
-.form__title {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 130%;
-  text-transform: uppercase;
-  color: var(--main-color);
+.goodbye__pic {
+  border-radius: 10px;
 }
 
 .form__footer {
