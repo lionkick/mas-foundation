@@ -64,6 +64,36 @@
       </div>
     </header>
     <main class="main">
+      <div class="form__donation">
+        <div class="collected">
+          <span class="collected__title">зібрано</span>
+          <span class="collected__sum">1 256 369 грн</span>
+        </div>
+        <form>
+          <label class="donation__label" for="customAmount">
+            Зробити внесок
+          </label>
+          <input
+            class="donation__input"
+            type="number"
+            id="customAmount"
+            name="amount"
+            min="1"
+            step="any"
+            required
+          />
+
+          <div class="donation-amounts">
+            <p>Або виберіть одну з запропонованих сум:</p>
+            <button type="button" onclick="selectAmount(50)">50 грн</button>
+            <button type="button" onclick="selectAmount(100)">100 грн</button>
+            <button type="button" onclick="selectAmount(200)">200 грн</button>
+            <button type="button" onclick="selectAmount(500)">500 грн</button>
+          </div>
+
+          <button type="submit">Пожертвувати</button>
+        </form>
+      </div>
       <section class="say-goodbye">
         <div class="container say-goodbye__container">
           <span class="say-goodbye__status">активний</span>
