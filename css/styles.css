@@ -1185,12 +1185,16 @@ img {
   background-color: transparent;
 }
 
+.donut-button:hover {
+  color: var(--main-color);
+  background-color: #0d0d0d;
+}
+
 .donut-uah {
-  color: rgba(13, 13, 13, 0.5);
   font-size: 15px;
 }
 
-/* Goodbye page */
+/* Section Goodbye */
 
 .say-goodbye__container {
   position: relative;
@@ -1255,6 +1259,46 @@ img {
   display: flex;
   gap: 10px;
   justify-content: end;
+}
+
+/* Section benefits */
+
+.benefits__container {
+  margin-bottom: 120px;
+}
+
+.benefits__title {
+  margin-bottom: 40px;
+}
+
+.benefits__list {
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits__item {
+  padding: 30px;
+  width: 100%;
+  background-color: #171717;
+}
+
+.benefits__item:not(:last-child) {
+  border-right: 1px solid #252525;
+}
+
+.benefits__item:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.benefits__item:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.benefits__pic {
+  margin-bottom: 20px;
 }
 
 /* =============================== */
