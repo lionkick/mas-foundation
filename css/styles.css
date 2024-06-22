@@ -1236,6 +1236,27 @@ img {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.slider {
+  width: 850px;
+}
+
+.slider__list {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.slider__pic {
+  border-radius: 10px;
+}
+
+.slider-navigation__list {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
 /* =============================== */
 /* Footer */
 /* =============================== */
