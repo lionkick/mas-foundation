@@ -981,6 +981,29 @@ img {
 }
 
 /* =============================== */
+/* Say goodbye */
+/* =============================== */
+
+/* .slider-navigation__item {
+  width: 38px;
+  height: 38px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+  background-image: url('../img/arrow_previous.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.slider-navigation__arrow {
+  fill: currentColor;
+}
+
+.slider-navigation__arrow:hover {
+  fill: #0a84ff;
+} */
+
+/* =============================== */
 /* Footer */
 /* =============================== */
 
