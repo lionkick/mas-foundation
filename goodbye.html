@@ -64,48 +64,71 @@
       </div>
     </header>
     <main class="main">
-      <div class="form__donation">
-        <div class="collected">
-          <span class="collected__title">зібрано</span>
-
-          <span class="collected__sum">
-            <span class="collected__fire"></span>
-            1 256 369 грн</span
-          >
-        </div>
-        <div class="donation__form">
-          <label class="donation__label" for="customAmount">
-            Зробити внесок
-          </label>
-          <input
-            class="donation__input"
-            type="number"
-            id="customAmount"
-            name="amount"
-            min="1"
-            step="any"
-            required
-          />
-          <select id="currency" name="currency" class="currency-select">
-            <option value="UAH">ГРН</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-          </select>
-
-          <div class="donation-amounts">
-            <p>Або виберіть одну з запропонованих сум:</p>
-            <button type="button" onclick="selectAmount(100)">+100 грн</button>
-            <button type="button" onclick="selectAmount(500)">+500 грн</button>
-            <button type="button" onclick="selectAmount(1000)">
-              +1000 грн
-            </button>
-          </div>
-
-          <button type="submit">Підтримати</button>
-        </div>
-      </div>
       <section class="say-goodbye">
         <div class="container say-goodbye__container">
+          <div class="form__donation">
+            <div class="collected">
+              <span class="collected__title">зібрано</span>
+
+              <span class="collected__sum">
+                <span class="collected__fire"></span>
+                1 256 369 грн</span
+              >
+            </div>
+            <div class="donation__form">
+              <label class="donation__label" for="customAmount">
+                Зробити внесок
+              </label>
+              <div class="input-group">
+                <input
+                  class="donation__input"
+                  type="number"
+                  id="customAmount"
+                  name="amount"
+                  min="1"
+                  step="any"
+                  required
+                />
+                <select id="currency" name="currency" class="currency-select">
+                  <option class="currency-select--option" value="UAH">
+                    ГРН
+                  </option>
+                  <option class="currency-select--option" value="USD">
+                    USD
+                  </option>
+                  <option class="currency-select--option" value="EUR">
+                    EUR
+                  </option>
+                </select>
+              </div>
+
+              <div class="donation-amounts">
+                <button
+                  class="donut-button"
+                  type="button"
+                  onclick="selectAmount(100)"
+                >
+                  +100 <span class="donut-uah">грн</span>
+                </button>
+                <button
+                  class="donut-button"
+                  type="button"
+                  onclick="selectAmount(500)"
+                >
+                  +500<span class="donut-uah"> грн</span>
+                </button>
+                <button
+                  class="donut-button donut-button--selected"
+                  type="button"
+                  onclick="selectAmount(1000)"
+                >
+                  +1000<span class="donut-uah"> грн</span>
+                </button>
+              </div>
+
+              <button class="donat__button" type="submit">Підтримати</button>
+            </div>
+          </div>
           <span class="say-goodbye__status">активний</span>
           <h1 class="say-goodbye__title title">
             <span class="dark__word">передай</span> гудбай

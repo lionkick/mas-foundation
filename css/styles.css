@@ -258,6 +258,50 @@ img {
   background-color: var(--second--color);
 }
 
+/* Donat button */
+.donat__button {
+  position: relative;
+  padding: 20px 50px;
+  display: inline-block;
+  width: 83%;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #0d0d0d;
+
+  border: 1px solid #0d0d0d;
+  border-radius: 5px;
+}
+
+.donat__button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 63px;
+  height: 63px;
+  background-color: #0a84ff;
+  background-image: url('../img/support__ico.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  transform: translate(110%, -50%);
+}
+
+.donat__button:hover,
+.donat__button:focus {
+  color: var(--button-color);
+  border-color: var(--button-color);
+  background-color: var(--second--color);
+}
+
+.donat__button:hover::after {
+  background-color: var(--second--color);
+  border: 1px solid var(--button-color);
+}
+
 /* Back button */
 .back__button {
   margin-right: 65px;
@@ -984,6 +1028,14 @@ img {
 /* Say goodbye */
 /* =============================== */
 
+/* Donat Form */
+
+.form__donation {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .collected {
   margin-bottom: 10px;
   display: flex;
@@ -1072,15 +1124,116 @@ img {
   display: inline-block;
 }
 
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(13, 13, 13, 0.2);
+}
+
 .donation__input {
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: transparent;
   outline: none;
+  border: none;
 
   font-size: 24px;
   line-height: 130%;
   color: #0d0d0d;
+}
+
+.currency-select {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  background-color: transparent;
+  border: none;
+}
+
+.currency-select--option {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  background-color: transparent;
+  border: none;
+}
+
+/* Donat buttons */
+
+.donation-amounts {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.donut-button {
+  display: inline-block;
+  padding: 8px;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(13, 13, 13, 0.5);
+  border-radius: 25px;
+  border: 1px solid rgba(13, 13, 13, 0.5);
+  outline: transparent;
+  background-color: transparent;
+}
+
+.donut-uah {
+  color: rgba(13, 13, 13, 0.5);
+  font-size: 15px;
+}
+
+/* Goodbye page */
+
+.say-goodbye__container {
+  position: relative;
+  margin-bottom: 120px;
+  margin-top: 120px;
+  padding-right: 434px;
+}
+
+.say-goodbye__status {
+  display: inline-block;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  background-color: var(--second--color);
+  border-radius: 17px;
+}
+
+.say-goodbye__title {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.say-goodbye__subject {
+  margin-bottom: 30px;
+  width: 740px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.say-goodbye__text {
+  margin-bottom: 40px;
+  width: 740px;
+
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* =============================== */
