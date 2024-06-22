@@ -985,18 +985,24 @@ img {
 /* =============================== */
 
 .slider-navigation__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
 
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.slider-navigation__link:hover {
+  color: var(--second--color);
 }
 
 .slider-navgation__icon {
-  width: 15px;
-  height: 16px;
-  fill: #fff;
-  stroke: #fff;
+  fill: currentColor;
 }
 
 /* =============================== */
