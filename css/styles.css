@@ -297,6 +297,10 @@ img {
 
   border: 1px solid #0d0d0d;
   border-radius: 5px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .donat__button::after {
@@ -312,6 +316,10 @@ img {
   background-position: center;
   border-radius: 50%;
   transform: translate(110%, -50%);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .donat__button:hover,
@@ -342,6 +350,10 @@ img {
 
   border: 1px solid #fff;
   border-radius: 5px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .back__button::after {
@@ -357,6 +369,10 @@ img {
   background-position: center;
   border-radius: 50%;
   transform: translate(110%, -50%);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .back__button:hover,
@@ -378,6 +394,8 @@ img {
   line-height: 130%;
   text-transform: uppercase;
   color: var(--second--color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .more__link:hover,
@@ -725,16 +743,26 @@ img {
 }
 
 .enemy-wish__input {
-  width: 100%;
+  width: 595px;
+  height: 65px;
   border-radius: 4px;
   padding: 12px 12px 12px 42px;
   outline: transparent;
   background-color: #0d0d0d;
 
-  font-weight: 400;
+  font-size: 28px;
+  line-height: 130%;
+  color: #e5e5e5;
+}
+
+.enemy-wish__input:placeholder-shown {
   font-size: 16px;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.form__button {
+  margin-top: 50px;
 }
 
 .goodbye__photo {
@@ -749,10 +777,18 @@ img {
 }
 
 .form__footer {
+  margin-top: 96px;
+  width: 595px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
   font-weight: 600;
   font-size: 21px;
   line-height: 130%;
   color: var(--main-color);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Team */
