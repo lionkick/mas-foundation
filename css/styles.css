@@ -1311,7 +1311,7 @@ img {
   margin-bottom: 120px;
 }
 
-.page-news__title {
+.page-news-title {
   margin-bottom: 60px;
 }
 
@@ -1322,6 +1322,7 @@ img {
 }
 
 .page-news__item {
+  margin-bottom: 40px;
   width: 411px;
 }
 
