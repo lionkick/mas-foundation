@@ -126,7 +126,9 @@
                 </button>
               </div>
 
-              <button class="donat__button" type="submit">Підтримати</button>
+              <button class="donat__button" type="submit" id="openModalBtn">
+                Підтримати
+              </button>
             </div>
           </div>
           <span class="say-goodbye__status">активний</span>
@@ -331,10 +333,43 @@
         </div>
       </div>
 
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <span class="modal__pic"></span>
+          <span class="modal__title">Дякуємо!</span>
+          <span class="modal__text"
+            >Ваша допомога для наших воїнів дуже важлива і не буде забута!</span
+          >
+        </div>
+      </div>
+
       <script>
         function selectAmount(amount) {
           document.getElementById('customAmount').value = amount;
         }
+      </script>
+
+      <script>
+        var modal = document.getElementById('modal');
+
+        var btn = document.getElementById('openModalBtn');
+
+        var span = document.getElementsByClassName('close-btn')[0];
+
+        btn.onclick = function () {
+          modal.style.display = 'block';
+        };
+
+        span.onclick = function () {
+          modal.style.display = 'none';
+        };
+
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+        };
       </script>
     </footer>
   </body>
