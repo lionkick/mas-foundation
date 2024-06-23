@@ -1448,6 +1448,76 @@ img {
 /* 404 */
 /* =============================== */
 
+.error-404__container {
+  margin-bottom: 120px;
+  position: relative;
+  padding-top: 360px;
+}
+
+.error-404__poster {
+  width: 298px;
+  height: 298px;
+
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  border-radius: 50%;
+  background-color: rgba(229, 229, 229, 0.05);
+
+  border: 1px dashed #e5e5e5;
+
+  z-index: -1;
+}
+
+.error-404__title {
+  position: absolute;
+  top: 70px;
+  left: 53.7%;
+  transform: translate(-50%, 0);
+
+  font-weight: 600;
+  font-size: 207px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 100px;
+}
+
+.error-404__ups {
+  margin-bottom: 40px;
+  display: block;
+
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.error-404__sorry {
+  display: block;
+  margin-bottom: 60px;
+
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.error-404__button {
+  width: 260px;
+}
+
+.error-button__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 /* =============================== */
 /* Footer */
 /* =============================== */
