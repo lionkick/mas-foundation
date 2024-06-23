@@ -1327,12 +1327,21 @@ img {
 
 .page-news__photo {
   position: relative;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  background-color: #171717;
+  border-radius: 10px;
+
+  overflow: hidden;
 }
 
 .news-corner {
+  /* outline: 1px solid red; */
   position: absolute;
   right: -26px;
-  top: 264px;
+  /* top: 264px; */
+  bottom: -127px;
   width: 116px;
   height: 257px;
 
@@ -1344,8 +1353,9 @@ img {
 .page-news__link {
   /* display: block; */
   position: absolute;
-  right: 25px;
-  top: 373px;
+  right: 20px;
+  bottom: 20px;
+  /* top: 373px; */
 }
 
 /* =============================== */
