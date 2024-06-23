@@ -1329,6 +1329,7 @@ img {
   position: relative;
   margin-bottom: 30px;
   padding: 20px;
+  margin-bottom: 20px;
 
   background-color: #171717;
   border-radius: 10px;
@@ -1356,6 +1357,29 @@ img {
   right: 20px;
   bottom: 20px;
   /* top: 373px; */
+}
+
+.page-news__data {
+  margin-bottom: 10px;
+
+  font-size: 13px;
+  line-height: 140%;
+  color: rgba(229, 229, 229, 0.5);
+}
+
+.page-news__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #e5e5e5;
+}
+
+.page-news__more {
+  margin-bottom: 120px;
+
+  display: flex;
+  justify-content: center;
 }
 
 /* =============================== */
