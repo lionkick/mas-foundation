@@ -11,7 +11,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 11px;
+    gap: 30px;
+
+    @include mq(desktop) {
+      gap: 11px;
+    }
   }
 
   &__item {

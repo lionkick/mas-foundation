@@ -5,29 +5,45 @@
 .footer {
   &__container {
     display: flex;
+    flex-direction: column;
     margin-bottom: 50px;
+
+    @include mq(desktop) {
+      flex-direction: row;
+    }
   }
 
   &__logo {
-    margin-right: 110px;
-    width: 217px;
+    @include mq(desktop) {
+      margin-right: 110px;
+      width: 217px;
+    }
   }
 
   &__slogan {
-    font-size: 16px;
+    width: 230px;
+    margin-bottom: 30px;
+    display: block;
+    font-size: 13px;
     line-height: 130%;
     color: rgba(255, 255, 255, 0.5);
+
+    @include mq(desktop) {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
   }
 
   &__addr-support {
-    margin-left: auto;
     display: flex;
     flex-direction: column;
+
+    @include mq(desktop) {
+      margin-left: auto;
+    }
   }
 
   &__phone {
-    margin-right: 60px;
-
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 18px;
@@ -35,6 +51,14 @@
     font-style: normal;
     text-transform: uppercase;
     color: #fff;
+
+    @include mq(desktop) {
+      margin-right: 60px;
+    }
+
+    @include mq(not-desktop) {
+      margin-bottom: 20px;
+    }
   }
 
   &__social {
@@ -44,8 +68,12 @@
   }
 
   &__button {
-    margin-left: auto;
-    margin-right: 68px;
+    margin-right: auto;
+
+    @include mq(desktop) {
+      margin-left: auto;
+      margin-right: 68px;
+    }
   }
 
   &__copyright {
@@ -66,7 +94,9 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  /* gap: 40px; */
+  @include mq(not-desktop) {
+    margin-bottom: 30px;
+  }
 }
 
 .navigation__item--footer:not(:last-child) {
@@ -78,6 +108,10 @@
   display: flex;
 
   margin-bottom: 40px;
+
+  @include mq(not-desktop) {
+    flex-direction: column;
+  }
 }
 
 .copyright__container {

@@ -1,4 +1,8 @@
 .logo {
   display: block;
-  margin-bottom: 54px;
+  margin-bottom: 20px;
+
+  @include mq(desktop) {
+    margin-bottom: 54px;
+  }
 }
