@@ -1039,16 +1039,18 @@ img {
   text-align: left;
   width: 264px;
 }
-.team__info {
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team__info {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .team__about {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 140%;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#0d0d0d));
   background: linear-gradient(180deg, #fff 0%, #0d0d0d 100%);
@@ -1056,21 +1058,39 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (min-width: 1440px) {
+  .team__about {
+    font-size: 28px;
+  }
+}
 .team__subject {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 768px) {
+  .team__subject {
+    font-size: 16px;
+  }
 }
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 120px;
 }
 .team__item {
+  width: 50%;
   padding: 20px;
   border: 1px solid #252525;
   background-color: #0d0d0d;
+}
+@media screen and (min-width: 1440px) {
+  .team__item {
+    width: 320px;
+  }
 }
 .team__item:first-child {
   border-top-left-radius: 10px;
@@ -1099,16 +1119,22 @@ img {
   color: rgba(229, 229, 229, 0.7);
 }
 .team__post {
-  font-family: var(--second-family);
-  font-weight: 600;
-  font-size: 75px;
-  text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#0d0d0d));
-  background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .team__post {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 75px;
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#0d0d0d));
+    background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
 }
 
 /* Partners */
