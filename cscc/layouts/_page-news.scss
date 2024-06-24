@@ -1,0 +1,68 @@
+/* =============================== */
+/* Page News */
+/* =============================== */
+
+.page-news {
+  &__container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  &-title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    width: 411px;
+  }
+
+  &__photo {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    background-color: #171717;
+    border-radius: 10px;
+
+    overflow: hidden;
+  }
+
+  &__link {
+    /* display: block; */
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    /* top: 373px; */
+  }
+
+  &__data {
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    line-height: 140%;
+    color: rgba(229, 229, 229, 0.5);
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #e5e5e5;
+  }
+
+  &__more {
+    margin-bottom: 120px;
+
+    display: flex;
+    justify-content: center;
+  }
+}
