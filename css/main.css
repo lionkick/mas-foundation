@@ -34,13 +34,32 @@ body {
   background-color: var(--page-bg-color);
 }
 
+.section {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .section {
+    margin-bottom: 120px;
+  }
+}
+
 .title {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 36px;
   line-height: 100%;
   text-transform: uppercase;
   text-align: center;
   color: var(--second--color);
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 50px;
+  }
 }
 
 h1,
@@ -80,7 +99,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 448px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 448px;
   }
@@ -856,7 +875,6 @@ img {
 
 .project__container {
   margin-top: 90px;
-  margin-bottom: 120px;
 }
 
 .project__wrapper {
@@ -928,9 +946,6 @@ img {
 }
 .goodbye__title {
   margin-bottom: 40px;
-}
-.goodbye__container {
-  margin-bottom: 120px;
 }
 .goodbye__wrapper {
   display: -webkit-box;
@@ -1100,9 +1115,6 @@ img {
 }
 
 /* Partners */
-.partners__container {
-  margin-bottom: 120px;
-}
 .partners__list {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1131,9 +1143,6 @@ img {
 }
 
 /* News */
-.news {
-  margin-bottom: 120px;
-}
 .news__title {
   margin-bottom: 40px;
 }
@@ -1202,7 +1211,6 @@ img {
 /* =============================== */
 .our-projects__container {
   margin-top: 90px;
-  margin-bottom: 120px;
 }
 .our-projects__list {
   margin-bottom: 80px;
@@ -1305,7 +1313,6 @@ img {
 /* =============================== */
 .say-goodbye__container {
   position: relative;
-  margin-bottom: 120px;
   margin-top: 120px;
   padding-right: 434px;
 }
@@ -1367,9 +1374,6 @@ img {
 }
 
 /* Section benefits */
-.benefits__container {
-  margin-bottom: 120px;
-}
 .benefits__title {
   margin-bottom: 40px;
 }
@@ -1407,7 +1411,6 @@ img {
 /* =============================== */
 .page-news__container {
   margin-top: 120px;
-  margin-bottom: 120px;
 }
 .page-news-title {
   margin-bottom: 60px;
@@ -1470,7 +1473,6 @@ img {
 /* =============================== */
 .article__container {
   margin-top: 120px;
-  margin-bottom: 120px;
 }
 .article__title {
   margin-bottom: 20px;
@@ -1518,7 +1520,6 @@ img {
 /* 404 */
 /* =============================== */
 .error-404__container {
-  margin-bottom: 120px;
   position: relative;
   padding-top: 360px;
 }

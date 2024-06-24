@@ -9,11 +9,27 @@ body {
   background-color: var(--page-bg-color);
 }
 
+.section {
+  margin-bottom: 70px;
+
+  @include mq(tablet) {
+    margin-bottom: 100px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 120px;
+  }
+}
+
 .title {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 36px;
   line-height: 100%;
   text-transform: uppercase;
   text-align: center;
   color: var(--second--color);
+
+  @include mq(desktop) {
+    font-size: 50px;
+  }
 }
