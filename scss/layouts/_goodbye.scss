@@ -4,16 +4,20 @@
 
 .goodbye {
   &__wish {
-    margin-bottom: 120px;
+    display: none;
+    @include mq(desktop) {
+      display: block;
+      margin-bottom: 120px;
 
-    font-family: var(--second-family);
-    font-weight: 600;
-    font-size: 70px;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+      font-family: var(--second-family);
+      font-weight: 600;
+      font-size: 70px;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   &__title {
@@ -53,6 +57,24 @@
   line-height: 130%;
   text-transform: uppercase;
   color: var(--main-color);
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.form__title--destop {
+  display: none;
+  @include mq(desktop) {
+    display: block;
+    margin-bottom: 50px;
+    width: 530px;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: var(--main-color);
+  }
 }
 
 .enemy-wish {

@@ -933,16 +933,22 @@ img {
 /* Goodbye */
 /* =============================== */
 .goodbye__wish {
-  margin-bottom: 120px;
-  font-family: var(--second-family);
-  font-weight: 600;
-  font-size: 70px;
-  text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#0d0d0d));
-  background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .goodbye__wish {
+    display: block;
+    margin-bottom: 120px;
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 70px;
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#0d0d0d));
+    background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 .goodbye__title {
   margin-bottom: 40px;
@@ -972,6 +978,27 @@ img {
   line-height: 130%;
   text-transform: uppercase;
   color: var(--main-color);
+}
+@media screen and (min-width: 1440px) {
+  .form__title {
+    display: none;
+  }
+}
+
+.form__title--destop {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .form__title--destop {
+    display: block;
+    margin-bottom: 50px;
+    width: 530px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: var(--main-color);
+  }
 }
 
 .enemy-wish {
