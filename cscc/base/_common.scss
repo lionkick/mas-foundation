@@ -1,0 +1,19 @@
+// Плавний скролінг до секції
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--main-color);
+  background-color: var(--page-bg-color);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--second--color);
+}

@@ -1,0 +1,22 @@
+.socilal__item {
+  border: 1px solid rgba(229, 229, 229, 0.1);
+  border-radius: 5px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(8px);
+  background: rgba(229, 229, 229, 0.1);
+}
+
+.social__link {
+  fill: var(--main-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: #0a84ff;
+  }
+}
