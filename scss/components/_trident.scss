@@ -1,10 +1,18 @@
 .trident {
   display: inline-block;
-  width: 56px;
-  height: 56px;
+  width: 31px;
+  height: 31px;
   background-color: var(--second--color);
   background-image: url('../img/trident__symbol.svg');
+  background-size: 18px;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 11px;
+  border-radius: 6px;
+
+  @include mq(desktop) {
+    width: 56px;
+    height: 56px;
+    border-radius: 11px;
+    background-size: 23px;
+  }
 }
