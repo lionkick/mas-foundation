@@ -615,11 +615,6 @@ img {
   color: #0d0d0d;
 }
 
-.donation__input,
-.currency-select {
-  display: inline-block;
-}
-
 .input-group {
   margin-bottom: 20px;
   display: -webkit-box;
@@ -632,6 +627,7 @@ img {
 }
 
 .donation__input {
+  display: inline-block;
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: transparent;
@@ -643,6 +639,7 @@ img {
 }
 
 .currency-select {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
@@ -1270,14 +1267,12 @@ img {
 /* =============================== */
 /* Say goodbye */
 /* =============================== */
-/* Section Goodbye */
 .say-goodbye__container {
   position: relative;
   margin-bottom: 120px;
   margin-top: 120px;
   padding-right: 434px;
 }
-
 .say-goodbye__status {
   display: inline-block;
   padding: 8px 10px;
@@ -1289,12 +1284,10 @@ img {
   background-color: var(--second--color);
   border-radius: 17px;
 }
-
 .say-goodbye__title {
   margin-bottom: 60px;
   text-align: left;
 }
-
 .say-goodbye__subject {
   margin-bottom: 30px;
   width: 740px;
@@ -1303,7 +1296,6 @@ img {
   line-height: 140%;
   color: rgba(255, 255, 255, 0.7);
 }
-
 .say-goodbye__text {
   margin-bottom: 40px;
   width: 740px;
@@ -1315,7 +1307,6 @@ img {
 .slider {
   width: 850px;
 }
-
 .slider__list {
   margin-bottom: 30px;
   display: -webkit-box;
@@ -1326,11 +1317,9 @@ img {
           justify-content: space-between;
   gap: 24px;
 }
-
 .slider__pic {
   border-radius: 10px;
 }
-
 .slider-navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;

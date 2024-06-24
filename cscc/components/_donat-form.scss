@@ -91,11 +91,6 @@
   color: #0d0d0d;
 }
 
-.donation__input,
-.currency-select {
-  display: inline-block;
-}
-
 .input-group {
   margin-bottom: 20px;
   display: flex;
@@ -104,6 +99,7 @@
 }
 
 .donation__input {
+  display: inline-block;
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: transparent;
@@ -116,6 +112,7 @@
 }
 
 .currency-select {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
