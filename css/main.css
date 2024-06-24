@@ -247,6 +247,7 @@ img {
   color: var(--button-color);
   border-color: var(--button-color);
   background-color: var(--second--color);
+  cursor: pointer;
 }
 .donat__button:hover::after {
   background-color: var(--second--color);
@@ -984,10 +985,13 @@ img {
 /* =============================== */
 /* Our Projects */
 /* =============================== */
+.our-projects__container {
+  margin-top: 90px;
+  margin-bottom: 120px;
+}
 .our-projects__list {
   margin-bottom: 80px;
 }
-
 .our-projects__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,11 +1001,9 @@ img {
   background-color: #171717;
   border-radius: 10px;
 }
-
 .our-projects__item:not(:last-child) {
   margin-bottom: 30px;
 }
-
 .our-projects__preview {
   position: relative;
   display: -webkit-box;
@@ -1016,8 +1018,7 @@ img {
   padding: 50px;
   width: 640px;
 }
-
-.our-project__num {
+.our-projects__num {
   position: absolute;
   left: 50px;
   top: 50px;
@@ -1030,7 +1031,6 @@ img {
   background-color: #0d0d0d;
   border-radius: 10px;
 }
-
 .our-projects__info {
   position: relative;
   display: -webkit-box;
@@ -1043,7 +1043,6 @@ img {
   width: 640px;
   padding: 50px;
 }
-
 .our-projects__status {
   position: absolute;
   top: 50px;
@@ -1057,7 +1056,6 @@ img {
   background-color: #fff;
   border-radius: 10px;
 }
-
 .our-projects__title {
   margin-bottom: 30px;
   font-weight: 500;
@@ -1066,15 +1064,12 @@ img {
   text-transform: uppercase;
   color: #fff;
 }
-
 .our-projects__text {
   font-size: 16px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.7);
 }
-
 .our-projects__navigation {
-  /* outline: 1px solid red; */
   margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1086,7 +1081,6 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-
 .our-projects__more {
   margin-right: 20px;
 }/*# sourceMappingURL=main.css.map */

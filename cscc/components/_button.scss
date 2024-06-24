@@ -241,6 +241,8 @@
     color: var(--button-color);
     border-color: var(--button-color);
     background-color: var(--second--color);
+
+    cursor: pointer;
   }
 
   &:hover::after {

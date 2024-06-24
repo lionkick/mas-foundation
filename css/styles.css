@@ -162,6 +162,7 @@
 .donut-button:hover {
   color: var(--main-color);
   background-color: #0d0d0d;
+  cursor: pointer;
 }
 
 .donut-uah {
