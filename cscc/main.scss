@@ -8,6 +8,7 @@
 @import './base/container';
 
 // components
+@import './components/logo';
 @import './components/button';
 @import './components/socials';
 @import './components/modal-form';
@@ -30,3 +31,5 @@
 @import './layouts/benefits';
 @import './layouts/page-news';
 @import './layouts/article';
+@import './layouts/404';
+@import './layouts/footer';
