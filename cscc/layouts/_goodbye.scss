@@ -2,35 +2,33 @@
 /* Goodbye */
 /* =============================== */
 
-.goodbye {
-  &__wish {
-    margin-bottom: 120px;
+.goodbye__wish {
+  margin-bottom: 120px;
 
-    font-family: var(--second-family);
-    font-weight: 600;
-    font-size: 70px;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 70px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  &__title {
-    margin-bottom: 40px;
-  }
+.goodbye__title {
+  margin-bottom: 40px;
+}
 
-  &__container {
-    margin-bottom: 120px;
-  }
+.goodbye__container {
+  margin-bottom: 120px;
+}
 
-  &__wrapper {
-    display: flex;
-  }
+.goodby__wrapper {
+  display: flex;
+}
 
-  &__form {
-    width: 640px;
-  }
+.goodbye__form {
+  width: 640px;
 }
 
 .form__title {
