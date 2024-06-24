@@ -1,0 +1,136 @@
+/* Donat Form */
+
+.form__donation {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.collected {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 30px 16px 30px;
+  width: 411px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  background-color: #0d0d0d;
+
+  &__title {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--main-color);
+  }
+
+  &__sum {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--main-color);
+  }
+
+  &__fire {
+    margin-right: 10px;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background-color: var(--second--color);
+    background-image: url('../img/fire.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+}
+
+.slider-navigation {
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+
+    &:hover {
+      color: var(--second--color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.donation__form {
+  padding: 30px;
+  display: block;
+  width: 410px;
+  height: 327px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+
+.donation__label {
+  margin-bottom: 40px;
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #0d0d0d;
+}
+
+.donation__input,
+.currency-select {
+  display: inline-block;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(13, 13, 13, 0.2);
+}
+
+.donation__input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  font-size: 24px;
+  line-height: 130%;
+  color: #0d0d0d;
+}
+
+.currency-select {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  background-color: transparent;
+  border: none;
+}
+
+.currency-select--option {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  background-color: transparent;
+  border: none;
+}
