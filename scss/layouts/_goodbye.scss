@@ -44,10 +44,16 @@
   }
 
   &__photo {
+    display: flex;
+    justify-content: center;
     padding: 20px;
 
     background-color: #171717;
     border-radius: 10px;
+
+    @include mq(mobile) {
+      margin-bottom: 30px;
+    }
   }
 
   &__pic {
@@ -56,7 +62,7 @@
 }
 
 .form__title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   font-weight: 500;
   font-size: 24px;
@@ -125,17 +131,20 @@
 }
 
 .form__button {
-  margin-top: 50px;
+  margin-top: 30px;
+  @include mq(desktop) {
+    margin-top: 50px;
+  }
 }
 
 .form__footer {
-  margin-top: 96px;
+  margin-top: 40px;
 
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   font-weight: 600;
-  font-size: 21px;
+  font-size: 15px;
   line-height: 130%;
   color: var(--main-color);
 
@@ -143,6 +152,10 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   @include mq(desktop) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-top: 96px;
     width: 595px;
+    font-size: 21px;
   }
 }
