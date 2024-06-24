@@ -10,8 +10,18 @@
     padding-bottom: 40px;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    @include mq(desktop) {
+      width: 180px;
+    }
   }
 
   &__link {
@@ -30,6 +40,11 @@
   }
 
   &__icon {
+    width: 135px;
     fill: currentColor;
+
+    @include mq(tablet) {
+      width: 180px;
+    }
   }
 }

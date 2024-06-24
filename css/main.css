@@ -1034,9 +1034,6 @@ img {
 /* =============================== */
 /* Team */
 /* =============================== */
-.team__container {
-  margin-bottom: 120px;
-}
 .team__title {
   margin-right: 64px;
   text-align: left;
@@ -1121,11 +1118,27 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.partners__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+@media screen and (min-width: 1440px) {
+  .partners__item {
+    width: 180px;
+  }
 }
 .partners__link {
   color: rgba(255, 255, 255, 0.4);
@@ -1139,7 +1152,13 @@ img {
   margin-bottom: 40px;
 }
 .partners__icon {
+  width: 135px;
   fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .partners__icon {
+    width: 180px;
+  }
 }
 
 /* News */
@@ -1148,10 +1167,14 @@ img {
 }
 .news__list {
   margin-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .news__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
 }
 .news__item {
   display: -webkit-box;
@@ -1161,7 +1184,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .news__item {
+    width: 50%;
+  }
 }
 .news__pic-wrapper {
   position: relative;
@@ -1192,10 +1219,15 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 140%;
   text-transform: uppercase;
   color: var(--main-color);
+}
+@media screen and (min-width: 1440px) {
+  .news__subject {
+    font-size: 21px;
+  }
 }
 .news__more {
   display: -webkit-box;

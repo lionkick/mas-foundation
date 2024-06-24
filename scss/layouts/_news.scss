@@ -9,14 +9,20 @@
 
   &__list {
     margin-bottom: 60px;
-    display: flex;
-    gap: 10px;
+
+    @include mq(tablet) {
+      display: flex;
+      gap: 10px;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    width: 50%;
+
+    @include mq(tablet) {
+      width: 50%;
+    }
   }
 
   &__pic-wrapper {
@@ -54,10 +60,14 @@
   &__subject {
     flex-grow: 1;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 16px;
     line-height: 140%;
     text-transform: uppercase;
     color: var(--main-color);
+
+    @include mq(desktop) {
+      font-size: 21px;
+    }
   }
 
   &__more {
