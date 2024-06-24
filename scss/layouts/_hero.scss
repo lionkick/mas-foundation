@@ -3,12 +3,15 @@
 /* =============================== */
 
 .hero {
-  /* position: relative; */
-  padding-top: 140px;
+  padding-top: 32px;
 
   background-image: url('../img/hero/hero__bg.png');
   background-repeat: no-repeat;
   background-position: right;
+
+  @include mq(desktop) {
+    padding-top: 140px;
+  }
 
   &__container {
     position: relative;
@@ -19,35 +22,48 @@
 
     font-style: italic;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 130%;
     text-transform: uppercase;
     color: var(--second--color);
+
+    @include mq(desktop) {
+      font-size: 16px;
+    }
   }
 
   &__title {
-    width: 960px;
-    margin-bottom: 246px;
+    margin-bottom: 370px;
 
     font-weight: 500;
-    font-size: 80px;
+    font-size: 42px;
     line-height: 130%;
     text-transform: uppercase;
     color: var(--main-color);
+
+    @include mq(desktop) {
+      margin-bottom: 246px;
+      width: 960px;
+      font-size: 80px;
+    }
   }
 
   &__social {
-    position: absolute;
-    right: 0;
-    top: 70px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    display: none;
+
+    @include mq(desktop) {
+      position: absolute;
+      right: 0;
+      top: 70px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
   }
 
   &__activity {
     position: absolute;
-    bottom: 44px;
+    bottom: 170px;
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -62,6 +78,10 @@
     background-color: rgba(229, 229, 229, 0.05);
 
     border: 1px dashed #e5e5e5;
+
+    @include mq(desktop) {
+      bottom: 44px;
+    }
   }
 
   &__button {

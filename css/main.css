@@ -815,11 +815,15 @@ img {
 /* Hero */
 /* =============================== */
 .hero {
-  /* position: relative; */
-  padding-top: 140px;
+  padding-top: 32px;
   background-image: url("../img/hero/hero__bg.png");
   background-repeat: no-repeat;
   background-position: right;
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 140px;
+  }
 }
 .hero__container {
   position: relative;
@@ -828,36 +832,52 @@ img {
   margin-bottom: 12px;
   font-style: italic;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 130%;
   text-transform: uppercase;
   color: var(--second--color);
 }
+@media screen and (min-width: 1440px) {
+  .hero__supertitle {
+    font-size: 16px;
+  }
+}
 .hero__title {
-  width: 960px;
-  margin-bottom: 246px;
+  margin-bottom: 370px;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 42px;
   line-height: 130%;
   text-transform: uppercase;
   color: var(--main-color);
 }
+@media screen and (min-width: 1440px) {
+  .hero__title {
+    margin-bottom: 246px;
+    width: 960px;
+    font-size: 80px;
+  }
+}
 .hero__social {
-  position: absolute;
-  right: 0;
-  top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 12px;
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .hero__social {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12px;
+  }
 }
 .hero__activity {
   position: absolute;
-  bottom: 44px;
+  bottom: 170px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -877,6 +897,11 @@ img {
   border-radius: 50%;
   background-color: rgba(229, 229, 229, 0.05);
   border: 1px dashed #e5e5e5;
+}
+@media screen and (min-width: 1440px) {
+  .hero__activity {
+    bottom: 44px;
+  }
 }
 .hero__button {
   margin-bottom: 44px;
