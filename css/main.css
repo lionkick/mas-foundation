@@ -970,8 +970,10 @@ img {
             flex-direction: row;
   }
 }
-.goodbye__form {
-  width: 640px;
+@media screen and (min-width: 1440px) {
+  .goodbye__form {
+    width: 640px;
+  }
 }
 .goodbye__photo {
   padding: 20px;
@@ -984,9 +986,8 @@ img {
 
 .form__title {
   margin-bottom: 50px;
-  width: 530px;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 130%;
   text-transform: uppercase;
   color: var(--main-color);
@@ -1027,7 +1028,7 @@ img {
   color: var(--main-color);
 }
 .enemy-wish__input {
-  width: 595px;
+  width: 100%;
   height: 65px;
   border-radius: 4px;
   padding: 12px 12px 12px 42px;
@@ -1036,6 +1037,11 @@ img {
   font-size: 28px;
   line-height: 130%;
   color: #e5e5e5;
+}
+@media screen and (min-width: 1440px) {
+  .enemy-wish__input {
+    width: 595px;
+  }
 }
 .enemy-wish__input:-moz-placeholder-shown {
   font-size: 16px;
@@ -1059,7 +1065,6 @@ img {
 
 .form__footer {
   margin-top: 96px;
-  width: 595px;
   padding-top: 23px;
   padding-bottom: 23px;
   font-weight: 600;
@@ -1068,6 +1073,11 @@ img {
   color: var(--main-color);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media screen and (min-width: 1440px) {
+  .form__footer {
+    width: 595px;
+  }
 }
 
 /* =============================== */
