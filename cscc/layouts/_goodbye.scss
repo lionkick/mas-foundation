@@ -1,0 +1,112 @@
+/* =============================== */
+/* Goodbye */
+/* =============================== */
+
+.goodbye {
+  &__wish {
+    margin-bottom: 120px;
+
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 70px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    margin-bottom: 120px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__form {
+    width: 640px;
+  }
+}
+
+.form__title {
+  margin-bottom: 50px;
+  width: 530px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.enemy-wish,
+.enemy-wish__label,
+.enemy-wish__input {
+  display: block;
+}
+
+.enemy-wish {
+  margin-bottom: 30px;
+}
+
+.enemy-wish__label {
+  margin-bottom: 15px;
+
+  font-size: 21px;
+  line-height: 130%;
+  color: var(--main-color);
+}
+
+.enemy-wish__input {
+  width: 595px;
+  height: 65px;
+  border-radius: 4px;
+  padding: 12px 12px 12px 42px;
+  outline: transparent;
+  background-color: #0d0d0d;
+
+  font-size: 28px;
+  line-height: 130%;
+  color: #e5e5e5;
+}
+
+.enemy-wish__input:placeholder-shown {
+  font-size: 16px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__button {
+  margin-top: 50px;
+}
+
+.goodbye__photo {
+  padding: 20px;
+
+  background-color: #171717;
+  border-radius: 10px;
+}
+
+.goodbye__pic {
+  border-radius: 10px;
+}
+
+.form__footer {
+  margin-top: 96px;
+  width: 595px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 130%;
+  color: var(--main-color);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}

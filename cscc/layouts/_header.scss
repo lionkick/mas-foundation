@@ -1,0 +1,60 @@
+/* ==================================== */
+/* Header */
+/* ==================================== */
+
+.header {
+  padding-top: 29px;
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    margin-right: 126px;
+  }
+
+  &__other {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+.logo__icon {
+  width: 200px;
+  height: 40px;
+  fill: var(--second--color);
+}
+
+/* navigation */
+
+.navigation {
+  &__list {
+    display: flex;
+  }
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 38px;
+  }
+}
+
+.navigation__link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #fff;
+
+  opacity: 0.7;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__link:hover,
+  &__link:focus {
+    opacity: 1;
+  }
+}

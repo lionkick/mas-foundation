@@ -1,0 +1,86 @@
+/* =============================== */
+/* Hero */
+/* =============================== */
+
+.hero {
+  /* position: relative; */
+  padding-top: 140px;
+
+  background-image: url('../img/hero/hero__bg.png');
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &__container {
+    position: relative;
+  }
+
+  &__supertitle {
+    margin-bottom: 12px;
+
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: var(--second--color);
+  }
+
+  &__title {
+    width: 960px;
+    margin-bottom: 246px;
+
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: var(--main-color);
+  }
+
+  &__social {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__activity {
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 48px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: rgba(229, 229, 229, 0.05);
+
+    border: 1px dashed #e5e5e5;
+  }
+
+  &__button {
+    margin-bottom: 44px;
+  }
+}
+
+.activity__icon {
+  margin-bottom: 32px;
+}
+
+.activity__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
