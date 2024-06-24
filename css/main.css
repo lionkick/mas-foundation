@@ -713,6 +713,14 @@ img {
 .goodbye__form {
   width: 640px;
 }
+.goodbye__photo {
+  padding: 20px;
+  background-color: #171717;
+  border-radius: 10px;
+}
+.goodbye__pic {
+  border-radius: 10px;
+}
 
 .form__title {
   margin-bottom: 50px;
@@ -724,23 +732,19 @@ img {
   color: var(--main-color);
 }
 
-.enemy-wish,
-.enemy-wish__label,
-.enemy-wish__input {
-  display: block;
-}
-
 .enemy-wish {
   margin-bottom: 30px;
+  display: block;
 }
-
+.enemy-wish__label, .enemy-wish__input {
+  display: block;
+}
 .enemy-wish__label {
   margin-bottom: 15px;
   font-size: 21px;
   line-height: 130%;
   color: var(--main-color);
 }
-
 .enemy-wish__input {
   width: 595px;
   height: 65px;
@@ -752,19 +756,16 @@ img {
   line-height: 130%;
   color: #e5e5e5;
 }
-
 .enemy-wish__input:-moz-placeholder-shown {
   font-size: 16px;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.3);
 }
-
 .enemy-wish__input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.3);
 }
-
 .enemy-wish__input:placeholder-shown {
   font-size: 16px;
   line-height: 130%;
@@ -773,16 +774,6 @@ img {
 
 .form__button {
   margin-top: 50px;
-}
-
-.goodbye__photo {
-  padding: 20px;
-  background-color: #171717;
-  border-radius: 10px;
-}
-
-.goodbye__pic {
-  border-radius: 10px;
 }
 
 .form__footer {
@@ -796,4 +787,99 @@ img {
   color: var(--main-color);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =============================== */
+/* Team */
+/* =============================== */
+.team__container {
+  margin-bottom: 120px;
+}
+
+.team__title {
+  margin-right: 64px;
+  text-align: left;
+  width: 264px;
+}
+
+.team__info {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team__about {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 140%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#0d0d0d));
+  background: linear-gradient(180deg, #fff 0%, #0d0d0d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team__subject {
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.team__item {
+  padding: 20px;
+  border: 1px solid #252525;
+  background-color: #0d0d0d;
+}
+
+.team__item:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.team__item:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.team__pic {
+  display: block;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+
+.team__name {
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.team__position {
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(229, 229, 229, 0.7);
+}
+
+.team__post {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 75px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#0d0d0d));
+  background: linear-gradient(180deg, #e5e5e5 0%, #0d0d0d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

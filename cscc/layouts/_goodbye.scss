@@ -31,6 +31,17 @@
   &__form {
     width: 640px;
   }
+
+  &__photo {
+    padding: 20px;
+
+    background-color: #171717;
+    border-radius: 10px;
+  }
+
+  &__pic {
+    border-radius: 10px;
+  }
 }
 
 .form__title {
@@ -44,56 +55,45 @@
   color: var(--main-color);
 }
 
-.enemy-wish,
-.enemy-wish__label,
-.enemy-wish__input {
-  display: block;
-}
-
 .enemy-wish {
   margin-bottom: 30px;
-}
+  display: block;
 
-.enemy-wish__label {
-  margin-bottom: 15px;
+  &__label,
+  &__input {
+    display: block;
+  }
 
-  font-size: 21px;
-  line-height: 130%;
-  color: var(--main-color);
-}
+  &__label {
+    margin-bottom: 15px;
 
-.enemy-wish__input {
-  width: 595px;
-  height: 65px;
-  border-radius: 4px;
-  padding: 12px 12px 12px 42px;
-  outline: transparent;
-  background-color: #0d0d0d;
+    font-size: 21px;
+    line-height: 130%;
+    color: var(--main-color);
+  }
 
-  font-size: 28px;
-  line-height: 130%;
-  color: #e5e5e5;
-}
+  &__input {
+    width: 595px;
+    height: 65px;
+    border-radius: 4px;
+    padding: 12px 12px 12px 42px;
+    outline: transparent;
+    background-color: #0d0d0d;
 
-.enemy-wish__input:placeholder-shown {
-  font-size: 16px;
-  line-height: 130%;
-  color: rgba(255, 255, 255, 0.3);
+    font-size: 28px;
+    line-height: 130%;
+    color: #e5e5e5;
+
+    &:placeholder-shown {
+      font-size: 16px;
+      line-height: 130%;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .form__button {
   margin-top: 50px;
-}
-
-.goodbye__photo {
-  padding: 20px;
-
-  background-color: #171717;
-  border-radius: 10px;
-}
-
-.goodbye__pic {
-  border-radius: 10px;
 }
 
 .form__footer {
