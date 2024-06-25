@@ -1678,6 +1678,11 @@ img {
   text-transform: uppercase;
   color: #fff;
 }
+@media screen and (min-width: 1440px) {
+  .our-projects__title {
+    font-size: 28px;
+  }
+}
 
 .our-projects__text {
   margin-bottom: 30px;

@@ -184,6 +184,10 @@
   line-height: 100%;
   text-transform: uppercase;
   color: #fff;
+
+  @include mq(desktop) {
+    font-size: 28px;
+  }
 }
 
 .our-projects__text {
