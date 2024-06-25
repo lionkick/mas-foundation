@@ -111,6 +111,10 @@
 }
 
 .our-projects__item {
+  @include mq(desktop) {
+    display: flex;
+    height: 400px;
+  }
 }
 
 .our-projects__item:not(:last-child) {
@@ -126,6 +130,11 @@
 
   background-color: #171717;
   border-radius: 10px;
+
+  @include mq(desktop) {
+    width: 640px;
+    height: 400px;
+  }
 }
 
 .our-projects__num {
@@ -143,6 +152,10 @@
 
   background-color: #171717;
   border-radius: 10px;
+
+  @include mq(desktop) {
+    width: 640px;
+  }
 }
 
 .our-projects__status {

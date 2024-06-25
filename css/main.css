@@ -1600,6 +1600,15 @@ img {
   margin-bottom: 70px;
 }
 
+@media screen and (min-width: 1440px) {
+  .our-projects__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+  }
+}
+
 .our-projects__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -1617,6 +1626,12 @@ img {
   background-color: #171717;
   border-radius: 10px;
 }
+@media screen and (min-width: 1440px) {
+  .our-projects__preview {
+    width: 640px;
+    height: 400px;
+  }
+}
 
 .our-projects__num {
   position: absolute;
@@ -1629,6 +1644,11 @@ img {
   padding: 30px 20px;
   background-color: #171717;
   border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .our-projects__info {
+    width: 640px;
+  }
 }
 
 .our-projects__status {
