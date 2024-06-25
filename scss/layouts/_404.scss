@@ -6,16 +6,20 @@
   &__container {
     // margin-bottom: 120px;
     position: relative;
-    padding-top: 360px;
+    padding-top: 240px;
+
+    @include mq(desktop) {
+      padding-top: 360px;
+    }
   }
 
   &__poster {
-    width: 298px;
-    height: 298px;
+    width: 144px;
+    height: 144px;
 
     position: absolute;
     top: 55px;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, 0);
 
     border-radius: 50%;
@@ -24,6 +28,12 @@
     border: 1px dashed #e5e5e5;
 
     z-index: -1;
+
+    @include mq(desktop) {
+      width: 298px;
+      height: 298px;
+      left: 50%;
+    }
   }
 
   &__title {
@@ -33,23 +43,33 @@
     transform: translate(-50%, 0);
 
     font-weight: 600;
-    font-size: 207px;
+    font-size: 97px;
     line-height: 130%;
     text-transform: uppercase;
     color: #fff;
-    letter-spacing: 100px;
+    letter-spacing: 55px;
+
+    @include mq(desktop) {
+      font-size: 207px;
+      letter-spacing: 100px;
+    }
   }
 
   &__ups {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     display: block;
 
     font-weight: 600;
-    font-size: 60px;
+    font-size: 36px;
     line-height: 130%;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+
+    @include mq(desktop) {
+      margin-bottom: 40px;
+      font-size: 60px;
+    }
   }
 
   &__sorry {
@@ -57,11 +77,15 @@
     margin-bottom: 60px;
 
     font-weight: 600;
-    font-size: 22px;
+    font-size: 15px;
     line-height: 130%;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+
+    @include mq(desktop) {
+      font-size: 22px;
+    }
   }
 
   &__button {

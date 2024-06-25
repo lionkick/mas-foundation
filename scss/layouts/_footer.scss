@@ -77,15 +77,23 @@
   }
 
   &__copyright {
-    font-size: 14px;
+    font-size: 11px;
     line-height: 130%;
     color: #414141;
+
+    @include mq(desktop) {
+      font-size: 14px;
+    }
   }
 
   &__developed {
-    font-size: 14px;
+    font-size: 11px;
     line-height: 130%;
     color: #414141;
+
+    @include mq(desktop) {
+      font-size: 14px;
+    }
   }
 }
 
