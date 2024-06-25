@@ -104,6 +104,10 @@
 // }
 
 .our-projects {
+  margin-top: 60px;
+  @include mq(desktop) {
+    margin-top: 120px;
+  }
 }
 
 .our-projects__list {
@@ -132,6 +136,9 @@
   border-radius: 10px;
 
   @include mq(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 640px;
     height: 400px;
   }
@@ -141,6 +148,8 @@
   position: absolute;
   top: 20px;
   left: 20px;
+
+  background-color: #0d0d0d;
 }
 
 .our-projects__pic {
@@ -215,4 +224,8 @@
 
 .our-projects__more {
   margin-bottom: 30px;
+
+  @include mq(tablet) {
+    margin-right: 30px;
+  }
 }
