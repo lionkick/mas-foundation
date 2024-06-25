@@ -69,3 +69,24 @@
     opacity: 1;
   }
 }
+
+.menu-button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  display: block;
+
+  color: #fff;
+
+  @include mq(desktop) {
+    display: none;
+  }
+
+  &:hover {
+    color: #0a84ff;
+  }
+}
+
+.menu__icon {
+  fill: currentColor;
+}

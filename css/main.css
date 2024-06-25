@@ -841,6 +841,26 @@ img {
   opacity: 1;
 }
 
+.menu-button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  display: block;
+  color: #fff;
+}
+@media screen and (min-width: 1440px) {
+  .menu-button {
+    display: none;
+  }
+}
+.menu-button:hover {
+  color: #0a84ff;
+}
+
+.menu__icon {
+  fill: currentColor;
+}
+
 /* =============================== */
 /* Hero */
 /* =============================== */
