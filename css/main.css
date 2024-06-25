@@ -1654,9 +1654,6 @@ img {
   padding: 50px;
 }
 .our-projects__status {
-  position: absolute;
-  top: 50px;
-  right: 50px;
   display: inline-block;
   padding: 8px 10px;
   font-size: 13px;
@@ -1665,6 +1662,13 @@ img {
   color: #0d0d0d;
   background-color: #fff;
   border-radius: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .our-projects__status {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
 }
 .our-projects__title {
   margin-bottom: 30px;
