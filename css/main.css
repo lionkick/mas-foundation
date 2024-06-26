@@ -1866,7 +1866,7 @@ img {
           justify-content: space-between;
   gap: 24px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1140px) {
   .slider__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
