@@ -29,6 +29,10 @@
 
     z-index: -1;
 
+    @include mq(media-desktop) {
+      left: 51%;
+    }
+
     @include mq(desktop) {
       width: 298px;
       height: 298px;
