@@ -5,9 +5,12 @@
 .say-goodbye {
   &__container {
     position: relative;
-    // margin-bottom: 120px;
-    margin-top: 120px;
-    padding-right: 434px;
+    margin-top: 60px;
+
+    @include mq(desktop) {
+      margin-top: 120px;
+      padding-right: 434px;
+    }
   }
 
   &__status {

@@ -1,9 +1,11 @@
 /* Donat Form */
 
 .form__donation {
-  position: absolute;
-  top: 0;
-  right: 0;
+  @include mq(desktop) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 .collected {
