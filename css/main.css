@@ -1871,35 +1871,78 @@ img {
 
 /* Section benefits */
 .benefits__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1440px) {
+  .benefits__title {
+    margin-bottom: 40px;
+  }
 }
 .benefits__list {
-  margin-bottom: 120px;
+  margin-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 1440px) {
+  .benefits__list {
+    margin-bottom: 120px;
+  }
+}
 .benefits__item {
   padding: 30px;
-  width: 100%;
+  width: 50%;
   background-color: #171717;
+  border: 1px solid #252525;
 }
-.benefits__item:not(:last-child) {
-  border-right: 1px solid #252525;
+@media screen and (min-width: 1440px) {
+  .benefits__item {
+    width: 25%;
+  }
 }
 .benefits__item:first-child {
   border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .benefits__item:first-child {
+    border-bottom-left-radius: 20px;
+  }
+}
+@media screen and (max-width: 1439.98px) {
+  .benefits__item:nth-child(2) {
+    border-top-right-radius: 20px;
+  }
+}
+@media screen and (max-width: 1439.98px) {
+  .benefits__item:nth-child(3) {
+    border-bottom-left-radius: 20px;
+  }
 }
 .benefits__item:last-child {
-  border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+@media screen and (min-width: 1440px) {
+  .benefits__item:last-child {
+    border-top-right-radius: 20px;
+  }
 }
 .benefits__pic {
   margin-bottom: 20px;
+}
+.benefits__text {
+  font-size: 15px;
+  line-height: 130%;
+  color: #e5e5e5;
+}
+@media screen and (min-width: 1440px) {
+  .benefits__text {
+    font-size: 16px;
+  }
 }
 
 /* =============================== */
