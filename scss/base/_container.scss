@@ -15,6 +15,12 @@
     width: 720px;
   }
 
+  @include mq(media-desktop) {
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 1140px;
+  }
+
   @include mq(desktop) {
     padding-left: 80px;
     padding-right: 80px;

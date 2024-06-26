@@ -12,12 +12,15 @@
 
   &__logo {
     display: block;
-    margin-right: 126px;
+    margin-right: 30px;
+    @include mq(desktop) {
+      margin-right: 126px;
+    }
   }
 
   &__other {
     display: none;
-    @include mq(desktop) {
+    @include mq(media-desktop) {
       display: flex;
       align-items: center;
       margin-left: auto;
@@ -41,7 +44,7 @@
 .navigation {
   &__list {
     display: none;
-    @include mq(desktop) {
+    @include mq(media-desktop) {
       display: flex;
     }
   }
@@ -78,7 +81,7 @@
 
   color: #fff;
 
-  @include mq(desktop) {
+  @include mq(media-desktop) {
     display: none;
   }
 
