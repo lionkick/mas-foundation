@@ -1958,25 +1958,23 @@ img {
   }
 }
 .article__photo {
-  width: 100%;
-  height: 227px;
   padding: 20px;
   margin-bottom: 60px;
   background-color: #171717;
   border-radius: 10px;
   overflow: hidden;
 }
-@media screen and (min-width: 1440px) {
-  .article__photo {
-    height: 380px;
-  }
-}
 .article__pic {
   border-radius: 10px;
-  -o-object-fit: containe;
-     object-fit: containe;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+@media screen and (min-width: 1440px) {
+  .article__pic {
+    height: 380px;
+  }
 }
 .article .article__body {
   margin-bottom: 120px;
