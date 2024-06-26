@@ -16,7 +16,7 @@
   &__status {
     display: inline-block;
     padding: 8px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     font-size: 13px;
     line-height: 130%;
@@ -24,41 +24,64 @@
     color: #0d0d0d;
     background-color: var(--second--color);
     border-radius: 17px;
+
+    @include mq(desktop) {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     text-align: left;
+
+    @include mq(desktop) {
+      margin-bottom: 60px;
+    }
   }
 
   &__subject {
     margin-bottom: 30px;
-    width: 740px;
 
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.7);
+
+    @include mq(desktop) {
+      width: 740px;
+      font-size: 24px;
+    }
   }
 
   &__text {
     margin-bottom: 40px;
-    width: 740px;
 
-    font-size: 16px;
+    font-size: 15px;
     line-height: 140%;
     color: rgba(255, 255, 255, 0.7);
+
+    @include mq(desktop) {
+      width: 740px;
+      font-size: 16px;
+    }
   }
 }
 
 .slider {
-  width: 850px;
+  @include mq(desktop) {
+    width: 850px;
+  }
 
   &__list {
     margin-bottom: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 24px;
+
+    @include mq(desktop) {
+      flex-direction: row;
+    }
   }
 
   &__pic {

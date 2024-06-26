@@ -1,10 +1,14 @@
 /* Donat Form */
 
 .form__donation {
+  margin-bottom: 40px;
+  position: static;
+
   @include mq(desktop) {
     position: absolute;
     top: 0;
     right: 0;
+    width: 411px;
   }
 }
 

@@ -730,11 +730,16 @@ img {
 }
 
 /* Donat Form */
+.form__donation {
+  margin-bottom: 40px;
+  position: static;
+}
 @media screen and (min-width: 1440px) {
   .form__donation {
     position: absolute;
     top: 0;
     right: 0;
+    width: 411px;
   }
 }
 
@@ -1776,7 +1781,7 @@ img {
 .say-goodbye__status {
   display: inline-block;
   padding: 8px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 13px;
   line-height: 130%;
   text-transform: uppercase;
@@ -1784,38 +1789,72 @@ img {
   background-color: var(--second--color);
   border-radius: 17px;
 }
+@media screen and (min-width: 1440px) {
+  .say-goodbye__status {
+    margin-bottom: 20px;
+  }
+}
 .say-goodbye__title {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: left;
+}
+@media screen and (min-width: 1440px) {
+  .say-goodbye__title {
+    margin-bottom: 60px;
+  }
 }
 .say-goodbye__subject {
   margin-bottom: 30px;
-  width: 740px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 1440px) {
+  .say-goodbye__subject {
+    width: 740px;
+    font-size: 24px;
+  }
 }
 .say-goodbye__text {
   margin-bottom: 40px;
-  width: 740px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.7);
 }
+@media screen and (min-width: 1440px) {
+  .say-goodbye__text {
+    width: 740px;
+    font-size: 16px;
+  }
+}
 
-.slider {
-  width: 850px;
+@media screen and (min-width: 1440px) {
+  .slider {
+    width: 850px;
+  }
 }
 .slider__list {
   margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .slider__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .slider__pic {
   border-radius: 10px;
